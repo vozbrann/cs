@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d">
     <UserControl.Resources>
         <Style TargetType="Button" x:Key="ButtonStyle">
@@ -31,9 +32,12 @@
                            FontWeight="Bold" 
                            FontSize="15"
                            FontFamily="Arial"/>
-                <Calendar x:Name="calendar" FirstDayOfWeek="Monday"
+                <!--<Calendar x:Name="calendar" FirstDayOfWeek="Monday"
                           SelectedDate ="{Binding Date}">
-                </Calendar>
+                </Calendar>-->
+                <DatePicker x:Name="calendar" FirstDayOfWeek="Monday"
+                            SelectedDate ="{Binding Date}">
+                </DatePicker>
             </StackPanel>
             <StackPanel Orientation="Vertical" Margin="15">
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,5">
