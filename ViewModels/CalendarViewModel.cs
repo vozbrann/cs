@@ -11,7 +11,7 @@ namespace Practice4.ViewModels
 {
     class CalendarViewModel : ObservableItem
     {
-        private DateTime _date;
+        private DateTime _date = DateTime.Today;
         private int _age;
         private bool _birthday;
         private string _western;
